@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MakeFriendlyApps — Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="logo.png">
 
     <!-- Open Graph for "Cool" factor when shared -->
     <meta property="og:title" content="MakeFriendlyApps — Building the Future Friendly">
@@ -17,29 +22,76 @@
 <body>
 
     <div class="background-fx"></div>
-    <!-- Moving background blobs -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
     <div class="grid-overlay"></div>
 
-    <main>
-        <div class="logo-container">
-            <img src="logo.png" alt="MakeFriendlyApps Logo" class="logo-img">
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="logo.png" alt="MakeFriendlyApps" class="nav-logo-img">
         </div>
+        <a href="mailto:jared@makefriendly.co.za" class="btn-primary">Contact Us</a>
+    </nav>
 
-        <h1 id="headline">Coming soon...</h1>
-        <p class="subtitle">We are building the next generation of helpful, friendly AI applications.</p>
+    <main>
+        <header class="hero-section">
+            <h1 class="hero-title">AI Designed for<br>the Human Experience.</h1>
+            <p class="hero-subtitle">We are building the next generation of helpful, friendly AI applications that
+                enhance how you live, work, and remember.</p>
+        </header>
 
-        <form class="input-group"
-            onsubmit="event.preventDefault(); alert('Thanks for your interest! We will keep you posted.');">
-            <input type="email" placeholder="Enter your email to join us" required>
-            <button type="submit">Notify Me</button>
-        </form>
+        <section class="projects-section">
+            <h2 class="section-title">Our Products</h2>
+            <div class="projects-grid">
+
+                <!-- TabBoard -->
+                <a href="https://tabboard.app/" target="_blank" class="project-card">
+                    <div class="card-icon">
+                        <img src="tabboard-icon.png" alt="TabBoard Icon" class="product-icon-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>TabBoard</h3>
+                        <p>Tame your browser chaos. Save, organize, and restore sessions instantly to boost your
+                            productivity.</p>
+                        <span class="link-text">Visit App &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Arthur -->
+                <a href="https://meetarthur.ai/" target="_blank" class="project-card">
+                    <div class="card-icon">
+                        <img src="arthur-icon.png" alt="Arthur Icon" class="product-icon-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Arthur</h3>
+                        <p>Your AI autobiography companion. Transform your life's memories into a beautifully written
+                            legacy.</p>
+                        <span class="link-text">Meet Arthur &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- StayComply -->
+                <a href="https://www.staycomply.co.za/" target="_blank" class="project-card">
+                    <div class="card-icon">
+                        <img src="staycomply-icon.png" alt="StayComply Icon" class="product-icon-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>StayComply</h3>
+                        <p>Short-term rentals, properly governed. Automated compliance and governance for modern hosts.
+                        </p>
+                        <span class="link-text">Learn More &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
     </main>
 
     <footer>
-        MakeFriendlyApps, LLC &copy; 2026
+        <div class="footer-content">
+            <p>&copy; 2026 MakeFriendlyApps, LLC. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="index.js"></script>
