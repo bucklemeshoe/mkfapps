@@ -1,0 +1,29 @@
+$ORIGIN make-friendly.com.
+
+; Exported (y-m-d hh:mm:ss): 2026-02-17
+; Netlify apex via ALIAS + www CNAME
+
+; SOA Record
+@	3600	IN	SOA	ns41.domaincontrol.com.	dns.jomax.net. (
+					2026021705
+					28800
+					7200
+					604800
+					3600
+					)
+
+; NS Records
+@	3600	IN	NS	ns41.domaincontrol.com.
+@	3600	IN	NS	ns42.domaincontrol.com.
+
+; Apex ALIAS to Netlify Load Balancer
+@	600	IN	ALIAS	apex-loadbalancer.netlify.com.
+
+; WWW to Netlify Site
+www	3600	IN	CNAME	mkfapps.netlify.app.
+
+; DMARC
+_dmarc	3600	IN	TXT	"v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;"
+
+; Domain Connect (GoDaddy)
+_domainconnect	3600	IN	CNAME	_domainconnect.gd.domaincontrol.com.
