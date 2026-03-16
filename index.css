@@ -140,30 +140,17 @@ main {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.nav-logo-img {
-    width: 64px;
-    /* Larger logo as requested */
-    height: 64px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
-    transition: transform 0.3s var(--ease-smooth);
-}
-
-.nav-logo-img:hover {
-    transform: scale(1.05) rotate(-2deg);
 }
 
 .nav-text-logo {
-    height: 32px;
+    height: 48px;
     object-fit: contain;
-    transition: opacity 0.3s var(--ease-smooth);
+    transition: transform 0.3s var(--ease-smooth), filter 0.3s var(--ease-smooth);
 }
 
 .nav-logo:hover .nav-text-logo {
-    opacity: 0.8;
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 }
 
 .btn-primary {
