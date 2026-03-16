@@ -140,6 +140,7 @@ main {
 .nav-logo {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo-img {
@@ -153,6 +154,16 @@ main {
 
 .nav-logo-img:hover {
     transform: scale(1.05) rotate(-2deg);
+}
+
+.nav-text-logo {
+    height: 32px;
+    object-fit: contain;
+    transition: opacity 0.3s var(--ease-smooth);
+}
+
+.nav-logo:hover .nav-text-logo {
+    opacity: 0.8;
 }
 
 .btn-primary {
