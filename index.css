@@ -46,7 +46,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: radial-gradient(circle at 50% 0%, #1e293b, #020617);
+    background: radial-gradient(circle at 50% 0%, #2a2a2a, #000000);
 }
 
 .blob {
@@ -63,8 +63,8 @@ body {
     left: -10%;
     width: 50vw;
     height: 50vw;
-    background: #4f46e5;
-    /* Indigo */
+    background: #555555;
+    /* Grey */
     animation-delay: 0s;
 }
 
@@ -73,8 +73,8 @@ body {
     right: -10%;
     width: 45vw;
     height: 45vw;
-    background: #0ea5e9;
-    /* Sky */
+    background: #222222;
+    /* Dark Grey */
     animation-delay: -5s;
 }
 
@@ -83,10 +83,10 @@ body {
     left: 30%;
     width: 40vw;
     height: 40vw;
-    background: #6366f1;
-    /* Violet */
+    background: #ffffff;
+    /* White */
     animation-delay: -10s;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 @keyframes float {
@@ -147,7 +147,7 @@ main {
     /* Larger logo as requested */
     height: 64px;
     object-fit: contain;
-    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.3));
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
     transition: transform 0.3s var(--ease-smooth);
 }
 
@@ -172,7 +172,7 @@ main {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 /* --- Hero Section --- */
@@ -267,7 +267,7 @@ main {
 .project-card:hover {
     background: var(--card-hover-bg);
     transform: translateY(-8px);
-    border-color: rgba(56, 189, 248, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
 }
 
@@ -327,7 +327,7 @@ main {
 
 .project-card:hover .link-text {
     gap: 0.75rem;
-    color: #7DD3FC;
+    color: #ffffff;
 }
 
 /* --- Footer --- */
