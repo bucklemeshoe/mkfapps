@@ -173,6 +173,31 @@ main {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
+/* Mobile floating FAB — hidden on desktop */
+.btn-mobile-fab {
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 100;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.btn-mobile-fab:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
 /* --- Hero Section --- */
 .hero-section {
     text-align: center;
@@ -368,6 +393,11 @@ footer {
         font-size: 2.75rem;
     }
 
+    /* Shrink logo by 30% on mobile (48px → ~34px) */
+    .nav-text-logo {
+        height: 34px;
+    }
+
     .nav-logo-img {
         width: 48px;
         height: 48px;
@@ -383,5 +413,14 @@ footer {
 
     .project-card {
         padding: 2rem;
+    }
+
+    /* Hide desktop button, show floating FAB on mobile */
+    .btn-desktop {
+        display: none;
+    }
+
+    .btn-mobile-fab {
+        display: flex;
     }
 }
